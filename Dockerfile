@@ -33,11 +33,7 @@ RUN set -x \
         +login anonymous \
         +force_install_dir /home/steam/l4d \
         +app_update 222840 validate \
-        +quit \
-		sleep 60 \
-		touch /home/steam/l4d/left4dead/cfg/server.cfg \
-		echo "mp_gamemode versus" >> /home/steam/l4d/left4dead/cfg/server.cfg
-
+        +quit 
 
 VOLUME /home/steam/steamcmd
 
